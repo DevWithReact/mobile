@@ -23,13 +23,13 @@ const LinkScreen = ({ navigation }) => {
                 style={styles.containerInner}
             >
                 <Text style={styles.heading}>
-                    Welcome!
+                    ¡Bienvenido!
                 </Text>
                 <Text style={styles.subHeading}>
-                    To start you must first link your device (s)
+                    para comenzar debes vincular primero tus dispositivo/s
                 </Text>
                 <WhiteButton
-                    title='Search Device(s)'
+                    title='BUSCAR DISPOSITIVO/S'
                     leftIcon={Images.ic_search}
                     onPress={() => {
                         navigation.navigate("Home");

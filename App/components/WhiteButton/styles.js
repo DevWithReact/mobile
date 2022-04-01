@@ -6,7 +6,7 @@ import {textScale} from '../../utils/textUtil';
 
 export const styles = StyleSheet.create({
   container: {
-    width: scale(260),
+    width: scale(280),
     height: scale(50),
     flexDirection: 'row',
     justifyContent: 'center',

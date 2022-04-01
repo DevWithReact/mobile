@@ -20,13 +20,13 @@ const SearchScreen = ({ navigation }) => {
                 style={styles.containerInner}
             >
                 <Text style={styles.heading}>
-                    Welcome!
+                    ¡Bienvenido!
                 </Text>
                 <Text style={styles.subHeading}>
-                    To start you must first link your device (s)
+                    para comenzar debes vincular primero tus dispositivo/s
                 </Text>
                 <WhiteButton
-                    title='PIANO LINK'
+                    title='VINCULAR PIANO'
                     rightIcon={Images.ic_key}
                     onPress={() => {
                         navigation.navigate("Link");
@@ -34,7 +34,7 @@ const SearchScreen = ({ navigation }) => {
                 />
                 <View style={styles.vspace}/>
                 <WhiteButton
-                    title='PEDAL LINK'
+                    title='VINCULAR PEDAL'
                     rightIcon={Images.ic_pedal}
                     onPress={() => {
                         
