@@ -27,5 +27,6 @@ export default {
 
   actionButtonBackground: '#EEEEEE80',
   closeButtonBackground: '#EEEEEEC0',
-  bubbleBackground: 'rgba(63, 95, 194, 0.2)'
+  bubbleBackground: 'rgba(63, 95, 194, 0.2)',
+  homeBackground: '#dbdad8',
 };

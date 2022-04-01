@@ -9,18 +9,28 @@ import PedalScreen from '../containers/Pedal';
 import Images from '../utils/Images';
 import { AuthContext } from '../AuthProvider';
 import { styles } from './styles';
+import Colors from '../utils/Colors';
 
 
 const Tab = createMaterialTopTabNavigator();
 const HomeNavigator = ({navigation}) => {
     const { user, chatBadge, userProfile } = React.useContext(AuthContext);
-    if (!userProfile) {
-        return null;
-    }
-
+    
     return (
         <Tab.Navigator
-            screenOptions={{ headerShown: false }}
+            screenOptions={{
+                tabBarLabelStyle: {
+                    color: Colors.white,
+                    fontWeight: '700'
+                },
+                tabBarIndicatorStyle: {
+                    backgroundColor: Colors.white,
+                    height: 5
+                },
+                tabBarStyle: {
+                    backgroundColor: Colors.primaryColor,
+                }
+            }}
             initialRouteName="Piano"
         >
             <Tab.Screen

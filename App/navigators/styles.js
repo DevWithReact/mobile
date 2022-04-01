@@ -17,4 +17,13 @@ export const styles = StyleSheet.create({
     left: scale(0),
     top: scale(0)
   },
+  header: {
+    backgroundColor: Colors.primaryColor,
+    alignItems: 'center',
+    paddingVertical: scale(5)
+  },
+  logo: {
+    width: scale(100),
+    height: scale(40)
+  }
 });

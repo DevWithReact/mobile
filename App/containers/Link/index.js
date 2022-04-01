@@ -2,15 +2,18 @@ import * as React from 'react';
 import {
     Image,
     View,
-    Text
+    Text,
+    StatusBar
   } from 'react-native';
 import WhiteButton from '../../components/WhiteButton';
+import Colors from '../../utils/Colors';
 import Images from '../../utils/Images';
 import {styles} from './styles';
 
 const LinkScreen = ({ navigation }) => {
     return (
-        <View style={styles.container}>
+        <View style={styles.container}>            
+            <StatusBar barStyle="light-content" backgroundColor={Colors.primaryColor} />
             <Image            
                 source={Images.ic_piano_headset}
                 style={styles.background}
@@ -29,7 +32,7 @@ const LinkScreen = ({ navigation }) => {
                     title='Search Device(s)'
                     leftIcon={Images.ic_search}
                     onPress={() => {
-
+                        navigation.navigate("Home");
                     }}
                 />
             </View>

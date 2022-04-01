@@ -8,18 +8,19 @@ import { getDeviceHeight } from '../../utils/extension';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.primaryColor,
+    backgroundColor: Colors.homeBackground,
   },
   containerInner: {
     alignItems: 'center',
     position: 'relative',
     flex: 1,
-    minHeight: scale(610)
+    minHeight: scale(610),
+    paddingTop: scale(50)
   },
-  logo: {    
+  keyboard: {    
       marginTop: scale(106),
-      width: scale(140),
-      height: scale(70),
+      width: scale(250),
+      height: scale(200),
   },
   greetingText: {
     fontFamily: Fonts.EpilogueBold,
