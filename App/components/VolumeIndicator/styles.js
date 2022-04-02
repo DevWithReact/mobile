@@ -11,13 +11,13 @@ export const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   indicator: {
-    width: scale(7),
+    width: scale(5),
     height: scale(0),
     backgroundColor: Colors.black,
     marginRight: scale(2)
   },
   indicatorDisabled: {
-    width: scale(7),
+    width: scale(5),
     height: scale(0),
     backgroundColor: Colors.greyColor,
     marginRight: scale(2)

@@ -32,25 +32,7 @@ const DeviceCard = ({ children, header = true, onLink, active}) => {
 						name="battery"
 						color={Colors.mediumGrayColor}
 						size={25}
-				/>
-				<View style={styles.rightActions}>
-					<FontAwesome
-							name="plus"
-							color={Colors.mediumGrayColor}
-							size={25}
-							onPress={() => {
-
-							}}
-					/>
-					<FontAwesome
-							name="minus"
-							color={Colors.mediumGrayColor}
-							size={25}
-							onPress={() => {
-								
-							}}
-					/>
-				</View>
+				/>				
 			</View>}
 			<View style={styles.content}>
 				{children}

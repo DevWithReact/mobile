@@ -24,13 +24,6 @@ export const styles = StyleSheet.create({
   effects: {
     flex: 1
   },
-  background: {
-    width: '100%',
-    height: scale(230),
-    position: 'absolute',
-    bottom: 0,
-    left: 0
-  },
   heading: {
     fontFamily: Fonts.EpilogueBold,
     fontSize: textScale(16),
@@ -50,7 +43,12 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   volumeWrapper: {
-    marginTop: scale(10)
+    marginTop: scale(2)
+  },
+  outlineCircle: {
+    borderRadius: 50,
+    borderWidth: 2,
+    borderColor: Colors.black
   },
   switchWrapper: {
     flex: 1,

@@ -53,11 +53,26 @@ const PianoStatusScreen = ({ navigation }) => {
                                 onPress={() => console.log('Pressed')}
                             />
                         </View>
+                        <View style={styles.vspace}/>
                         <Text style={styles.heading}>
                             Volume
                         </Text>
-                        <View style={styles.volumeWrapper}>
+                        <View style={[styles.volumeWrapper, styles.inline]}>
+                            <IconButton
+                                icon="minus"
+                                color={Colors.grey}
+                                size={scale(22)}
+                                onPress={() => console.log('Pressed')}
+                                style={styles.outlineCircle}
+                            />
                             <VolumeIndicator/>
+                            <IconButton
+                                icon="plus"
+                                color={Colors.grey}
+                                size={scale(22)}
+                                onPress={() => console.log('Pressed')}
+                                style={styles.outlineCircle}
+                            />
                         </View>
                     </View>
                     <View style={styles.effects}>
