@@ -23,11 +23,14 @@ import BatteryPiano from '../../components/BatteryPiano';
 import BatteryPedal from '../../components/BatteryPedal';
 
 const PianoStatusScreen = ({ navigation }) => {
+    const [effect1, setEffect1] = React.useState(false);
+    const [effect2, setEffect2] = React.useState(false);
+    const [effect3, setEffect3] = React.useState(false);
     return (
         <View style={styles.container}>            
             <StatusBar barStyle="light-content" backgroundColor={Colors.primaryColor} />
-            <Card>
-                <Card.Content style={styles.mainCard}>
+            <DeviceCard header={false}>
+                <View style={styles.mainCard}>
                     <View
                         style={styles.octaveVolume}
                     >
@@ -61,26 +64,29 @@ const PianoStatusScreen = ({ navigation }) => {
                         <View style={styles.switchWrapper}>
                             <LabelSwitch
                                 title="Effect 1"
-                                onValueChange={() => {
-
+                                value={effect1}
+                                onValueChange={(v) => {
+                                    setEffect1(v);
                                 }}
                             />
                             <LabelSwitch
                                 title="Effect 2"
-                                onValueChange={() => {
-
+                                value={effect2}
+                                onValueChange={(v) => {
+                                    setEffect2(v);
                                 }}
                             />
                             <LabelSwitch
                                 title="Effect 3"
-                                onValueChange={() => {
-
+                                value={effect3}
+                                onValueChange={(v) => {
+                                    setEffect3(v);
                                 }}
                             />
                         </View>
                     </View>
-                </Card.Content>
-            </Card>
+                </View>
+            </DeviceCard>
             <View style={styles.vspace}/>
             <DeviceCard>
                 <BatteryPiano

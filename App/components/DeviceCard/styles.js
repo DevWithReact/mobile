@@ -9,6 +9,13 @@ export const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: Colors.lightGrayColor,
     borderRadius: scale(6),
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,  
+    elevation: 5
+    
   },
   header: {
     width: '100%',
@@ -20,6 +27,15 @@ export const styles = StyleSheet.create({
   leftActions: {
     position: 'absolute',
     left: 10,
+  },
+  halfCircle: {
+    width: scale(80),
+    height: scale(80),
+    borderRadius: scale(50),
+    backgroundColor: '#fefefe',
+    position: 'absolute',
+    left: scale(-45),
+    top: scale(-50)
   },
   rightActions: {
     position: 'absolute',

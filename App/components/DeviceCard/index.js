@@ -12,16 +12,21 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import Colors from '../../utils/Colors';
 
-const DeviceCard = ({ children, onLink, active}) => {
+const DeviceCard = ({ children, header = true, onLink, active}) => {
 	return (
 		<View style={styles.container}>
-			<View style={styles.header}>
+			{header && <View style={styles.header}>
 				<View style={styles.leftActions}>
 					<FeatherIcon
 							name="link-2"
 							color={Colors.black}
 							size={25}
+							style={{zIndex: 10}}
+							onPress={() => {
+
+							}}
 					/>
+					<View style={styles.halfCircle}/>
 				</View>
 				<FontAwesome
 						name="battery"
@@ -33,14 +38,20 @@ const DeviceCard = ({ children, onLink, active}) => {
 							name="plus"
 							color={Colors.mediumGrayColor}
 							size={25}
+							onPress={() => {
+
+							}}
 					/>
 					<FontAwesome
 							name="minus"
 							color={Colors.mediumGrayColor}
 							size={25}
+							onPress={() => {
+								
+							}}
 					/>
 				</View>
-			</View>
+			</View>}
 			<View style={styles.content}>
 				{children}
 			</View>
@@ -49,11 +60,10 @@ const DeviceCard = ({ children, onLink, active}) => {
 };
 
 DeviceCard.propTypes = {
-  title: PropTypes.string,
-  loading: PropTypes.bool,
-	leftIcon: PropTypes.any,
-	rightIcon: PropTypes.any,
-  onPress: PropTypes.func.isRequired,
+  children: PropTypes.string,
+  header: PropTypes.bool,
+	active: PropTypes.any,
+  onLink: PropTypes.func
 }
 
 export default DeviceCard;

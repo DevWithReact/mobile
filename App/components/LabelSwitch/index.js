@@ -6,12 +6,13 @@ import {
 import PropTypes from 'prop-types';
 import { Switch } from 'react-native-paper';
 import {styles} from './styles';
+import Colors from '../../utils/Colors';
 
 const LabelSwitch = ({ title = "", value = true, onValueChange}) => {
 	return (
 	<View style={styles.container}>
 		<Text style={styles.label}>{title}</Text>
-		<Switch value={value} onValueChange={onValueChange} />
+		<Switch value={value} color={Colors.primaryColor} onValueChange={onValueChange} />
 	</View>
 	);
 };

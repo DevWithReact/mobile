@@ -50,6 +50,21 @@ const MainNavigator = () => {
             <Stack.Screen
                 name="PianoStatus"
                 component={PianoStatusScreen}
+                options={{                    
+                    title: 'Profile',
+                    headerShown: true,
+                    header: ({ navigation, route, options, back }) => {                      
+                        return (
+                            <View style={styles.header}>
+                                <Image
+                                    source={Images.ic_logo}
+                                    style={styles.logo}
+                                    resizeMode={"contain"}
+                                />
+                            </View>
+                        );
+                      }
+                }}
             />
             <Stack.Screen
                 name="Home"
