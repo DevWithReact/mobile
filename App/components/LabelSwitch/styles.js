@@ -6,19 +6,16 @@ import {textScale} from '../../utils/textUtil';
 
 export const styles = StyleSheet.create({
   container: {
-    width: scale(290),
-    height: scale(50),
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.textInputBackground,
-    borderRadius: scale(6),
+    marginVertical: scale(10)
   },
-  text: {
-    color: Colors.black,
+  label: {
+    color: Colors.greyColor,
     fontFamily: Fonts.EpilogueBold,
-    fontWeight: '700',
-    fontSize: textScale(18),
+    fontWeight: '500',
+    fontSize: textScale(14),
   },
   lefticon: {
     position: 'absolute',

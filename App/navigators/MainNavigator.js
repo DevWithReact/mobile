@@ -9,9 +9,11 @@ import SplashScreen from '../containers/Splash';
 import HomeNavigator from './HomeNavigator';
 import SearchScreen from '../containers/Search';
 import LinkScreen from '../containers/Link';
+import PianoStatusScreen from '../containers/PianoStatus';
 import { AuthContext } from '../AuthProvider';
 import Images from '../utils/Images';
 import { styles } from './styles';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -44,6 +46,10 @@ const MainNavigator = () => {
             <Stack.Screen
                 name="Link"
                 component={LinkScreen}
+            />
+            <Stack.Screen
+                name="PianoStatus"
+                component={PianoStatusScreen}
             />
             <Stack.Screen
                 name="Home"

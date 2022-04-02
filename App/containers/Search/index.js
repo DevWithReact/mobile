@@ -37,7 +37,7 @@ const SearchScreen = ({ navigation }) => {
                     title='VINCULAR PEDAL'
                     rightIcon={Images.ic_pedal}
                     onPress={() => {
-                        
+                        navigation.navigate("PianoStatus");                        
                     }}
                 />
             </View>
