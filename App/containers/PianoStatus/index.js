@@ -21,6 +21,7 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 import DeviceCard from '../../components/DeviceCard';
 import BatteryPiano from '../../components/BatteryPiano';
 import BatteryPedal from '../../components/BatteryPedal';
+import { scale } from '../../utils/scale';
 
 const PianoStatusScreen = ({ navigation }) => {
     const [effect1, setEffect1] = React.useState(false);
@@ -41,14 +42,14 @@ const PianoStatusScreen = ({ navigation }) => {
                             <IconButton
                                 icon="chevron-left"
                                 color={Colors.grey}
-                                size={50}
+                                size={scale(35)}
                                 onPress={() => console.log('Pressed')}
                             />
                             <Text style={styles.octaveValue}>3</Text>
                             <IconButton
                                 icon="chevron-right"
                                 color={Colors.grey}
-                                size={50}
+                                size={scale(35)}
                                 onPress={() => console.log('Pressed')}
                             />
                         </View>

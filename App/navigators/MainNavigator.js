@@ -50,8 +50,7 @@ const MainNavigator = () => {
             <Stack.Screen
                 name="PianoStatus"
                 component={PianoStatusScreen}
-                options={{                    
-                    title: 'Profile',
+                options={{
                     headerShown: true,
                     header: ({ navigation, route, options, back }) => {                      
                         return (
@@ -69,8 +68,7 @@ const MainNavigator = () => {
             <Stack.Screen
                 name="Home"
                 component={HomeNavigator}
-                options={{                    
-                    title: 'Profile',
+                options={{
                     headerShown: true,
                     header: ({ navigation, route, options, back }) => {                      
                         return (

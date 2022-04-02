@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
   octaveVolume: {
     flex: 1,
     borderRightWidth: 1,
-    borderRightColor: Colors.greyColor
+    borderRightColor: Colors.greyColor,
   },
   effects: {
     flex: 1
