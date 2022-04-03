@@ -43,12 +43,15 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   volumeWrapper: {
-    marginTop: scale(2)
+    marginTop: scale(8),
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   outlineCircle: {
     borderRadius: 50,
     borderWidth: 2,
-    borderColor: Colors.black
+    borderColor: Colors.black,
+    marginHorizontal: scale(8)
   },
   switchWrapper: {
     flex: 1,

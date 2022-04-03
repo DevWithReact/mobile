@@ -1,5 +1,5 @@
 export default {
-  primaryColor: '#c90507',
+  primaryColor: '#990B3B',
   secondaryColor: '#B0C7EF',
 
   mintColor: '#A6D1BF',

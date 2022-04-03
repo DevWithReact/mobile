@@ -29,7 +29,7 @@ const SearchScreen = ({ navigation }) => {
                     title='VINCULAR PIANO'
                     rightIcon={Images.ic_key}
                     onPress={() => {
-                        navigation.navigate("Link");
+                        //navigation.navigate("Link");
                     }}
                 />
                 <View style={styles.vspace}/>
@@ -37,7 +37,7 @@ const SearchScreen = ({ navigation }) => {
                     title='VINCULAR PEDAL'
                     rightIcon={Images.ic_pedal}
                     onPress={() => {
-                        navigation.navigate("PianoStatus");                        
+                        //navigation.navigate("PianoStatus");                        
                     }}
                 />
             </View>

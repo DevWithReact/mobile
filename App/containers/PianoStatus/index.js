@@ -61,7 +61,7 @@ const PianoStatusScreen = ({ navigation }) => {
                             <IconButton
                                 icon="minus"
                                 color={Colors.grey}
-                                size={scale(22)}
+                                size={scale(18)}
                                 onPress={() => console.log('Pressed')}
                                 style={styles.outlineCircle}
                             />
@@ -69,7 +69,7 @@ const PianoStatusScreen = ({ navigation }) => {
                             <IconButton
                                 icon="plus"
                                 color={Colors.grey}
-                                size={scale(22)}
+                                size={scale(18)}
                                 onPress={() => console.log('Pressed')}
                                 style={styles.outlineCircle}
                             />
@@ -106,7 +106,7 @@ const PianoStatusScreen = ({ navigation }) => {
             <View style={styles.vspace}/>
             <DeviceCard            
                 onLinkPress={() => {                        
-                    navigation.navigate("Home");
+                    navigation.navigate("Search");
                 }}
             >
                 <BatteryPiano
