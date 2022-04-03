@@ -104,13 +104,21 @@ const PianoStatusScreen = ({ navigation }) => {
                 </View>
             </DeviceCard>
             <View style={styles.vspace}/>
-            <DeviceCard>
+            <DeviceCard            
+                onLinkPress={() => {                        
+                    navigation.navigate("Home");
+                }}
+            >
                 <BatteryPiano
                     level={2}
                 />
             </DeviceCard>
             <View style={styles.vspace}/>
-            <DeviceCard>
+            <DeviceCard            
+                onLinkPress={() => {                        
+                    navigation.navigate("Home");
+                }}
+            >
                 <BatteryPedal
                     level={2}
                 />

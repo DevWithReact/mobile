@@ -40,14 +40,6 @@ const MainNavigator = () => {
             }}
             >
             <Stack.Screen
-                name="Search"
-                component={SearchScreen}
-            />
-            <Stack.Screen
-                name="Link"
-                component={LinkScreen}
-            />
-            <Stack.Screen
                 name="PianoStatus"
                 component={PianoStatusScreen}
                 options={{
@@ -64,6 +56,14 @@ const MainNavigator = () => {
                         );
                       }
                 }}
+            />
+            <Stack.Screen
+                name="Search"
+                component={SearchScreen}
+            />
+            <Stack.Screen
+                name="Link"
+                component={LinkScreen}
             />
             <Stack.Screen
                 name="Home"

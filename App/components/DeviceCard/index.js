@@ -12,7 +12,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import Colors from '../../utils/Colors';
 
-const DeviceCard = ({ children, header = true, onLink, active}) => {
+const DeviceCard = ({ children, header = true, onLinkPress, active}) => {
 	return (
 		<View style={styles.container}>
 			{header && <View style={styles.header}>
@@ -23,7 +23,7 @@ const DeviceCard = ({ children, header = true, onLink, active}) => {
 							size={25}
 							style={{zIndex: 10}}
 							onPress={() => {
-
+								onLinkPress();
 							}}
 					/>
 					<View style={styles.halfCircle}/>
@@ -45,7 +45,7 @@ DeviceCard.propTypes = {
   children: PropTypes.string,
   header: PropTypes.bool,
 	active: PropTypes.any,
-  onLink: PropTypes.func
+  onLinkPress: PropTypes.func
 }
 
 export default DeviceCard;
