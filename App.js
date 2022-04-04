@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -25,6 +25,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import SplashScreen from 'react-native-splash-screen'
 
 import MainNavigator from './App/navigators/MainNavigator';
 import { MenuProvider } from 'react-native-popup-menu';
@@ -36,7 +37,9 @@ LogBox.ignoreLogs(["EventEmitter.removeListener", 'Animated.event']);
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
-  
+  useEffect(() => {
+    SplashScreen.hide();
+  }, [])
   return (
     <MenuProvider>
       <AuthProvider>
