@@ -3,7 +3,7 @@ import Fonts from '../../utils/Fonts';
 import Colors from '../../utils/Colors';
 import {scale, scaleVertical} from '../../utils/scale';
 import { textScale } from '../../utils/textUtil';
-import { getDeviceHeight } from '../../utils/extension';
+import { getDeviceHeight, isAndroid } from '../../utils/extension';
 
 export const styles = StyleSheet.create({  
   container: {
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     fontSize: textScale(24),
     fontWeight: '700',
     color: 'white',
-    marginTop: scale(49)
+    marginTop: isAndroid() ? scale(49) : scale(69)
   },
   subHeading: {
     width: scale(200),

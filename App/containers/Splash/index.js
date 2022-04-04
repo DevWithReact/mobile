@@ -4,14 +4,16 @@ import {
     ImageBackground,
     Image,
     View,
-    Text
+    Text,
+    StatusBar
   } from 'react-native';
 import Images from '../../utils/Images';
 import {styles} from './styles';
 
 const SplashScreen = ({ navigation }) => {
     return (
-        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+            <StatusBar hidden />
             <ImageBackground            
                 source={Images.ic_splash}
                 style={styles.background}
@@ -30,7 +32,7 @@ const SplashScreen = ({ navigation }) => {
                     </Text>
                 </View>
             </ImageBackground>
-        </SafeAreaView>
+        </View>
     );
 };
 
