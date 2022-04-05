@@ -31,7 +31,7 @@ const BatteryPiano = ({ level = 3}) => {
 };
 
 BatteryPiano.propTypes = {
-	volume: PropTypes.number.isRequired
+	level: PropTypes.number.isRequired
 }
 
 export default BatteryPiano;

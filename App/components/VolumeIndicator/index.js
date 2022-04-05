@@ -32,7 +32,7 @@ const VolumeIndicator = ({ volume = 3}) => {
 };
 
 VolumeIndicator.propTypes = {
-	volume: PropTypes.number.isRequired
+	volume: PropTypes.number
 }
 
 export default VolumeIndicator;

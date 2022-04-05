@@ -42,7 +42,7 @@ const DeviceCard = ({ children, header = true, onLinkPress, active}) => {
 };
 
 DeviceCard.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.object,
   header: PropTypes.bool,
 	active: PropTypes.any,
   onLinkPress: PropTypes.func

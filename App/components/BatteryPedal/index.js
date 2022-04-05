@@ -31,7 +31,7 @@ const BatteryPedal = ({ level = 3}) => {
 };
 
 BatteryPedal.propTypes = {
-	volume: PropTypes.number.isRequired
+	level: PropTypes.number.isRequired
 }
 
 export default BatteryPedal;
