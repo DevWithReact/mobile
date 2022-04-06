@@ -27,9 +27,6 @@ const SplashScreen = ({ navigation }) => {
                         resizeMode='contain'
                         style={styles.logo}
                     />
-                    <Text style={styles.label}>
-                        A whole piano in your pocket.
-                    </Text>
                 </View>
             </ImageBackground>
         </View>

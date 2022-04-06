@@ -18,4 +18,8 @@ export default {
   ic_battery_st: require('./../assets/images/ic_battery_st.png'),
   ic_pedal_charge: require('./../assets/images/ic_pedal_charge.png'),
   ic_pedal_charge_grey: require('./../assets/images/ic_pedal_charge_grey.png'),
+
+  
+  ic_pedal_white: require('./../assets/images/ic_pedal_white.png'),
+  ic_piano_white: require('./../assets/images/ic_piano_white.png'),
 };

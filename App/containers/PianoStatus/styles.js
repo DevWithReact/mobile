@@ -69,5 +69,42 @@ export const styles = StyleSheet.create({
   },
   vspace: {
     height: scale(20)
+  },  
+  modalStyle: {
+    justifyContent: 'flex-end',
+    margin: 0,
+  },  
+  modalContainer: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    height: scale(300),
+    paddingTop: scale(50),
+    alignItems: 'center',
+    borderRadius: 4,
+    borderColor: 'rgba(0, 0, 0, 0.1)',
+  },
+  deviceLabel: {
+    width: scale(200),
+    textAlign: 'center',
+    fontFamily: Fonts.EpilogueBold,
+    fontSize: textScale(18),
+    fontWeight: '700',
+    color: 'white',
+    marginBottom: scale(20),
+  },
+  deviceWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  deviceIcon: {
+    width: scale(20),
+    height: scale(20),
+  },
+  deviceName: {
+    marginLeft: scale(5),
+    textAlign: 'center',
+    fontFamily: Fonts.EpilogueBold,
+    fontSize: textScale(15),
+    fontWeight: '700',
+    color: 'white',
   }
 });
